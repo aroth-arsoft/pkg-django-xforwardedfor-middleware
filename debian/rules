@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+buildvers := $(shell pyversions -sv)
+#build3vers := $(shell py3versions -sv)
+
+export PYBUILD_NAME=django-xforwardedfor-middleware
+export PYBUILD_DISABLE=test
+
+# Don't compress .py files
+DEB_COMPRESS_EXCLUDE := .py
+
+TARGET_DISTRIBUTION := $(shell dpkg-parsechangelog  | awk '/Distribution/ { print $$2}')
+SUBSTVARS=
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+override_dh_clean:
+	dh_clean
+	test -f django_xforwardedfor_middleware.egg-info/SOURCES.txt && sed '/setup\.cfg/d' -i django_xforwardedfor_middleware.egg-info/SOURCES.txt || true

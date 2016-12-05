@@ -1,0 +1,23 @@
+Source: django-xforwardedfor-middleware
+Section: admin
+Priority: optional
+Maintainer: Andreas Roth <aroth@arsoft-online.com>
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), dh-python, python (>= 2.7), python3 (>= 3.4),
+ python-setuptools, python3-setuptools
+X-Python-Version: >=2.7
+X-Python3-Version: >=2.4
+
+Package: python-django-xforwardedfor-middleware
+Section: python
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Django X-Forwarded-For Middleware
+ Use the X-Forwarded-For header to get the real ip of a request
+
+Package: python3-django-xforwardedfor-middleware
+Section: python
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Django X-Forwarded-For Middleware
+ Use the X-Forwarded-For header to get the real ip of a request

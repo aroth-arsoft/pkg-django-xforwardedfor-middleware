@@ -1,0 +1,5 @@
+django-xforwardedfor-middleware (1.0-0.1aroth1) yakkety; urgency=medium
+
+  * initial release
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Sun, 04 Dec 2016 15:36:47 +0100

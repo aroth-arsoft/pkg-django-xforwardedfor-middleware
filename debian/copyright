@@ -1,0 +1,13 @@
+Upstream Author: Alexander Schier <allo@laxu.de>
+
+Copyright: Copyright (c) 2014-2016, Alexander Schier
+
+License:
+
+    Public domain
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL'.
+
+The Debian packaging is (C) 2016, Andreas Roth <aroth@arsoft-online.com> and
+is licensed under the GPL, see above.
